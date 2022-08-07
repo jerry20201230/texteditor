@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 });
  
 
-app.get(/src/, (req, res) => {
+app.get(/src|lib|Undo|bootstrap|jquery/, (req, res) => {
   res.sendFile(`${__dirname}/${req.path}`);
 });
 
